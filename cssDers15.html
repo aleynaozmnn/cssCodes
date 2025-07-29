@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OVERFLOW</title>
+    <style>
+        .overflow {
+            background-color: blanchedalmond;
+            /* Eğer divine sabit bir yükseklik verip dışına çıkarsan overflow gerçekleşir */
+            width: 100%;
+            height: 100px;
+            /* overflow görünür default olarak visible */
+            overflow: visible;
+            /* Taşan kısımları saklamak için hidden kullanıldı */
+            overflow: hidden;
+            /* Veya scroll ekleyerek kaydır 
+            overflow: scroll;*/
+            overflow: scroll;
+            /* taşma olana kadar scroll gelmez olduğu ilk anda scroll ekler*/
+            overflow: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="overflow">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi veniam ipsam quaerat nam hic
+            expedita omnis repellat!</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quis magni dignissimos itaque porro.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat unde sapiente earum provident!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vero expedita a magni impedit natus eius.</p>
+    </div>
+
+
+</body>
+
+</html>

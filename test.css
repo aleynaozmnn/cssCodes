@@ -1,0 +1,4 @@
+h1{
+    color: red;
+}
+/* büyük dosyalarda ana sayfada head in içi çok fazla karışık olmasın diye kazandırılmak istenen özellikler için harici bir CSS dosyası açılır ve metot içine yazılır daha sonra ana dosyada head içinde link+enter denerek parent belli edilir */

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Width ve Height Nasıl Kullanılır</title>
+    <style>
+        .kutu{
+            background-color: red;
+            /* Server syfasını imleçle sağa sola götürdükçe kutuda küçülür ve büyür */
+            width:50% ;
+            height: 100px;
+
+
+        }
+        /* İç içe iki tane kutu oluşturulmasını sağlar kutu2 de imleç hareketlerine göre büyür ve küçülür*/
+        .kutu2{
+            /* Dışında bulunan kutunun mood değerine göre kendini ayarla  */
+            background-color: blue;
+            width: 50%;
+            height: 50px;
+            padding-bottom: 50px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="kutu" >
+        <p>Dış Div Kutusu</p>
+        <div class="kutu2"><p>İçteki Div Kutusu</p></div>
+    </div>
+    
+</body>
+</html>

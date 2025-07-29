@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Inline /block/inline block -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .kutu1{
+            background-color: bisque;
+            width: 250px;
+            height: 200px;
+            /* display: block;
+             yani tüm staırı kaplasın ,block  */
+             display: inline-block;
+              
+
+        }
+        .kutu2
+        {
+            width: 250px;
+            height: 200px;
+            background-color: wheat;
+            /* display:block ; */
+            display: inline-block;
+            margin-left: 23px;
+            /* Aralarında boşluk oluşturduk */
+        }
+
+    </style>
+</head>
+ 
+ <!-- Bir tagın bütün satırı kaplamasına blok deriz
+ Sadece bulunduğu yer kadar kaplıyorsa Inline tag olur -->
+<body>
+    <!-- <p>Paragraf1</p>
+    <a href="a">Link1</a> -->
+    <!-- Bu sayede paragraf1 artık bloktan->inline a geçiş yaptı -->
+
+    <!-- inline olan taga width ve height değerleri veremezsiniz -->
+
+    <p style="display:inline">Paragraf1</p>
+    <a href="a">Link1</a>
+    
+    <p style="display:inline ; width: 250px; height: 250px;">Paragraf1</p>
+    <div class="kutu1"></div>
+    <div class="kutu2"></div>
+    <!-- Oluşturduğum 2 kutu şu an alt alta gözüküyor yan yana gelmesini istiyorsak ne inline ne block yapılır.Display inline block kullanmalıyız -->
+</body>
+</html>

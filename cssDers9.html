@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- SELECTORS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        /* * bütün elementleri seçer */
+        *{
+            color: red;
+
+        }
+       /* P etiketlerinin tamamına blog içinde belirtilen işlemi uygula */
+        p{
+            color: blue;
+        }
+        /* P ve h3 elementlerinin tamamına blog içinde verilen işlemi uygula */
+        p,h3{
+            color: blueviolet;
+        }
+        /* Divin içindeki tüm p elementlerine uygular paragraf6 div içinde olmadığından  güncelleme yapılmaz */
+        div p{
+            color: black;
+        }
+        /* Parenti div olanları seç sadece  */
+        div > p{
+            color: chocolate;
+        }
+        /* Divin parent olduğu ilk çocuğu seç */
+        div > p:first-child{
+            color: rgb(255, 127, 221);
+        }
+        div > p:last-child{
+            color: cadetblue;
+        }
+
+        div > nav > a:nth-child(2)
+        {
+            color: chartreuse;
+        }
+    </STYLE>
+</head>
+<body>
+    <div>
+        <p>paragraf1</p>
+        <p>paragraf2</p>
+        <p>paragraf3</p>
+        <p>paragraf4</p>
+        <p>paragraf5</p>
+        <nav>
+            <p>paragraf</p>
+            <a href="a">Link1</a>
+            <a href="a">Link2</a> 
+            <a href="a">Link3</a>
+        </nav>
+        <a href="a">Link4</a>
+        <a href="a">Link5</a>
+    </div>
+    <div>
+        <h3>Etiket1</h3>
+        <h3>Etiket2</h3>
+        <h3>Etiket 3</h3>
+    </div>
+    <p>paragraf6</p>
+    
+</body>
+</html>

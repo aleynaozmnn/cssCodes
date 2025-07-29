@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Vertical Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        ul {
+            background-color: black;
+            /* ul içindeki madde ikonlarını sil*/
+            list-style-type: none;
+
+            /* sayfanın %35 ini kapla */
+            display: flex;
+            width: 100%;
+
+
+        }
+
+         ul li {
+            display: inline-block;
+            padding: 12px 12px;
+            width: 35px;
+            height: 25px;
+            margin-right: 15px;
+            /* margin-left: -40px; */
+        } 
+
+        /* State changed imleç ile gezerken */
+         ul li:hover {
+            background-color:red;
+            /* İmleç üzerine geldikten 0.8s sonra tam olarak mavi olsun renkler arası geçiş sağlasın */
+            transition: 0.5s;
+        } 
+
+        ul li a {
+            /*Parametrelerin altındaki çizgieri sil */
+            text-decoration: none;
+            color: aliceblue;
+
+        }
+
+        /* Parametreler arasındaki boşluğu düzenledik 
+        ul li{
+            padding: 15px;
+        }*/
+
+        /* Home background sabitlendi */
+        ul li:nth-child(1) {
+            background-color:rgb(255, 255, 255)
+        }
+        ul li:nth-child(1) a {
+            color: black;
+        }
+        /* ul li a:hover{
+             color: red;
+              renk geçişi yumuşak bir şekilde olsun 
+             transition: 0,5s; */
+             
+
+             
+            
+              
+    #news_content{
+        /* Akıştan bağımsız hale getirildi */
+         position: absolute;
+        z-index: 1;
+        
+        display: none;
+        margin-top: 15px;
+        /* newsler aynı hizada olsun ana şablonla */
+        margin-left: 0px; 
+
+
+    }
+    .news_li:hover #news_content{
+        display: block;
+    }  
+    #news_content ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* 👈 Alt alta dizilmesi için bu önemli */
+}
+#news_content li {
+    padding: 5px 10px;
+    background-color: lightgray;
+    margin-bottom: 3px;
+}
+
+#news_content li:hover {
+    background-color: red;
+}
+
+     
+    </style>
+</head>
+
+<body>
+    <ul>
+        <!-- ikonlar gelsin diye a nın içine i tagları -->
+        <li><a href="a"> <i class="fas fa-house"></i>Home</a></li>
+
+        <li class="news_li"><a href="a"><i class="fa-regular fa-envelope"></i>News</a>
+            <div id="news_content">
+                <ul>
+                    <li style="display: block;"><a href="a">News1</a></li>
+                    <li style="display: block;"><a href="a">News2</a></li>
+                    <li style="display: block;"><a href="a">News3</a></li>
+                    <li style="display: block;"><a href="a">News4</a></li>
+                </ul>
+
+            </div>
+
+        </li>
+
+        <li><a href="https://tr.pinterest.com/pin/6262886977194519/"><i class="fa-solid fa-address-card"></i> Contact</a></li>
+        
+        <li><a href="a"><i class="fa-solid fa-file"></i>About</a></li>
+
+    </ul>
+
+</body>
+
+</html>
